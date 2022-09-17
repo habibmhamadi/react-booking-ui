@@ -1,6 +1,10 @@
 nav {
     background: #003580;
     color: white;
+    padding-bottom: 100px;
+}
+
+.navWrapper {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,10 +13,10 @@ nav {
 .navContainer {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    max-width: 1536px;
+    justify-content: space-between;
     align-items: center;
-    max-width: 1024px;
-    padding: 10px;
+    padding: 16px;
 }
 
 .navButtons button {
@@ -23,3 +27,63 @@ nav {
     color: #003580;
     padding: 6px 12px;
 }
+
+.navLinkWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navLinkContainer {
+    width: 100%;
+    display: flex;
+    max-width: 1536px;
+    gap: 20px;
+    padding: 3px 16px;
+    margin-top: 20px;
+
+}
+
+.navLink {
+    padding: 8px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.navLink.active {
+    border: 1px solid white;
+}
+
+.navLink span {
+    margin-left: 10px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    max-width: 1536px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 16px;
+    margin-top: 50px;
+}
+
+.headerContainer div div {
+    margin: 20px 0;
+}
+
+.headerContainer button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #0071c2;
+    color: white;
+}
+
